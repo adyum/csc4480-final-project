@@ -1,4 +1,4 @@
-# csc44880-final-project
+# csc4480-final-project
 To run this project you will need an Oracle SQL enviroment.
 For online use, consider this: https://livesql.oracle.com
 
