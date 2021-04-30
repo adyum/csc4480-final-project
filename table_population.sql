@@ -20,50 +20,50 @@ VALUES(9,'Computer Science','Kelly Goldsmith');
 
 --Import the courses
 INSERT INTO COURSE(Course_Num, Course_Name, Course_Dept, Course_Semester, Course_Year)
-VALUES('4780', 'Intro to SQL', 'Computer Science', 'Fall 2021', '2021');
+VALUES('4780', 'Intro to SQL', 'Computer Science', 'Fall', '2021');
 INSERT INTO COURSE(Course_Num, Course_Name, Course_Dept, Course_Semester, Course_Year)
-VALUES('5600', 'Android Development', 'Computer Science', 'Fall 2021', '2021');
+VALUES('5600', 'Android Development', 'Computer Science', 'Fall', '2021');
 INSERT INTO COURSE(Course_Num, Course_Name, Course_Dept, Course_Semester, Course_Year)
-VALUES('4200', 'Intro to Python', 'Computer Science', 'Spring 2022', '2022');
+VALUES('4200', 'Intro to Python', 'Computer Science', 'Spring', '2022');
 INSERT INTO COURSE(Course_Num, Course_Name, Course_Dept, Course_Semester, Course_Year)
-VALUES('3200', 'Calculus 4', 'Math', 'Fall 2021', '2021');
+VALUES('3200', 'Calculus 4', 'Math', 'Fall', '2021');
 INSERT INTO COURSE(Course_Num, Course_Name, Course_Dept, Course_Semester, Course_Year)
-VALUES('3300', 'Differential Equations', 'Math', 'Spring 2022', '2022');
+VALUES('3300', 'Differential Equations', 'Math', 'Spring', '2022');
 
 --Import the grade
 INSERT INTO GRADE(Grade_ID, Grade_StudentID, Grade_CourseID, Grade_Value, Grade_Percent, Grade_Type)
 VALUES(1, 4, 4780, '98','20','Test');
 INSERT INTO GRADE(Grade_ID, Grade_StudentID, Grade_CourseID, Grade_Value, Grade_Percent, Grade_Type)
-VALUES(2, 1, 4780, '98','20','Test');
+VALUES(2, 1, 4780, '95','20','Test');
 INSERT INTO GRADE(Grade_ID, Grade_StudentID, Grade_CourseID, Grade_Value, Grade_Percent, Grade_Type)
-VALUES(3, 2, 4780, '98','20','Test');
+VALUES(3, 2, 4780, '55','20','Test');
 INSERT INTO GRADE(Grade_ID, Grade_StudentID, Grade_CourseID, Grade_Value, Grade_Percent, Grade_Type)
-VALUES(4, 2, 4780, '98','20','Test');
+VALUES(4, 2, 4780, '76','20','Test');
 INSERT INTO GRADE(Grade_ID, Grade_StudentID, Grade_CourseID, Grade_Value, Grade_Percent, Grade_Type)
-VALUES(5, 3, 4780, '98','20','Test');
+VALUES(5, 3, 4780, '37','20','Test');
 INSERT INTO GRADE(Grade_ID, Grade_StudentID, Grade_CourseID, Grade_Value, Grade_Percent, Grade_Type)
-VALUES(6, 1, 5600, '98','20','Test');
+VALUES(6, 1, 5600, '88','20','Test');
 INSERT INTO GRADE(Grade_ID, Grade_StudentID, Grade_CourseID, Grade_Value, Grade_Percent, Grade_Type)
-VALUES(7, 5, 5600, '98','40','Midterm');
+VALUES(7, 5, 4780, '84','40','Midterm');
 INSERT INTO GRADE(Grade_ID, Grade_StudentID, Grade_CourseID, Grade_Value, Grade_Percent, Grade_Type)
-VALUES(8, 5, 5600, '98','40','Midterm');
+VALUES(8, 5, 5600, '78','40','Midterm');
 INSERT INTO GRADE(Grade_ID, Grade_StudentID, Grade_CourseID, Grade_Value, Grade_Percent, Grade_Type)
-VALUES(9, 6, 5600, '98','10','Homework');
+VALUES(9, 6, 5600, '68','10','Homework');
 INSERT INTO GRADE(Grade_ID, Grade_StudentID, Grade_CourseID, Grade_Value, Grade_Percent, Grade_Type)
-VALUES(10, 4, 4780, '98','10','Homework');
+VALUES(10, 4, 4780, '94','10','Homework');
 INSERT INTO GRADE(Grade_ID, Grade_StudentID, Grade_CourseID, Grade_Value, Grade_Percent, Grade_Type)
-VALUES(11, 2, 4780, '98','10','Homework');
+VALUES(11, 2, 4780, '90','10','Homework');
 INSERT INTO GRADE(Grade_ID, Grade_StudentID, Grade_CourseID, Grade_Value, Grade_Percent, Grade_Type)
-VALUES(12, 3, 4780, '98','10','Homework');
+VALUES(12, 3, 4780, '91','10','Homework');
 INSERT INTO GRADE(Grade_ID, Grade_StudentID, Grade_CourseID, Grade_Value, Grade_Percent, Grade_Type)
-VALUES(13, 6, 4200, '98','10','Homework');
+VALUES(13, 6, 4200, '81','10','Homework');
 INSERT INTO GRADE(Grade_ID, Grade_StudentID, Grade_CourseID, Grade_Value, Grade_Percent, Grade_Type)
-VALUES(14, 6, 4780, '98','10','Homework');
+VALUES(14, 6, 4780, '55','10','Homework');
 INSERT INTO GRADE(Grade_ID, Grade_StudentID, Grade_CourseID, Grade_Value, Grade_Percent, Grade_Type)
-VALUES(15, 6, 4200, '98','20','Quiz');
+VALUES(15, 6, 4200, '78','20','Quiz');
 INSERT INTO GRADE(Grade_ID, Grade_StudentID, Grade_CourseID, Grade_Value, Grade_Percent, Grade_Type)
-VALUES(16, 1, 4200, '98','20','Quiz');
+VALUES(16, 1, 4200, '84','20','Quiz');
 INSERT INTO GRADE(Grade_ID, Grade_StudentID, Grade_CourseID, Grade_Value, Grade_Percent, Grade_Type)
-VALUES(17, 2, 4780, '98','20','Quiz');
+VALUES(17, 2, 4780, '90','20','Quiz');
 INSERT INTO GRADE(Grade_ID, Grade_StudentID, Grade_CourseID, Grade_Value, Grade_Percent, Grade_Type)
-VALUES(18, 4, 4200, '98','20','Quiz');
+VALUES(18, 4, 4200, '99','20','Quiz');

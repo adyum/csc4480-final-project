@@ -8,3 +8,65 @@ FROM COURSE;
 SELECT *
 FROM GRADE;
 
+--List All Students With Grades
+SELECT DISTINCT STUDENT_NAME
+FROM STUDENT, GRADE
+WHERE Grade.Grade_StudentID = Student.Student_ID
+ORDER by Student_Name;
+
+--List All Courses For 2021
+SELECT COURSE_NAME
+FROM COURSE
+WHERE Course_Year = '2021';
+
+--List All Courses For 2022
+SELECT COURSE_NAME
+FROM COURSE
+WHERE Course_Year = '2022';
+
+--List All Spring Courses
+SELECT COURSE_NAME
+FROM COURSE
+WHERE Course_Semester = 'Spring';
+
+--List All Fall Courses
+SELECT COURSE_NAME
+FROM COURSE
+WHERE Course_Semester = 'Fall';
+
+--Find Students With Grade Above a 90
+SELECT STUDENT.STUDENT_NAME, GRADE.GRADE_VALUE, GRADE.GRADE_TYPE
+FROM STUDENT, GRADE
+WHERE
+Grade.Grade_StudentID = Student.Student_ID and
+Grade.Grade_Value > '90'
+ORDER BY STUDENT_NAME;
+
+--Find Students With Grade Below 70
+
+SELECT STUDENT.STUDENT_NAME, GRADE.GRADE_VALUE, GRADE.GRADE_TYPE
+FROM STUDENT, GRADE
+WHERE
+Grade.Grade_StudentID = Student.Student_ID and
+Grade.Grade_Value < '70'
+ORDER BY STUDENT_NAME;
+
+--Find the Classes Adam Staryak is Taking
+SELECT COURSE_NAME, COURSE_NUM
+FROM COURSE
+WHERE COURSE_NUM IN (SELECT GRADE_COURSEID
+FROM GRADE
+WHERE GRADE_STUDENTID IN (SELECT Student_ID
+FROM STUDENT
+WHERE Student_Name = 'Adam Staryak'))
+ORDER BY COURSE_NAME;
+
+--Find the Classes Andre the Giant is Taking
+SELECT COURSE_NAME, COURSE_NUM
+FROM COURSE
+WHERE COURSE_NUM IN (SELECT GRADE_COURSEID
+FROM GRADE
+WHERE GRADE_STUDENTID IN (SELECT Student_ID
+FROM STUDENT
+WHERE Student_Name = 'Andre the Giant'))
+ORDER BY COURSE_NAME;
